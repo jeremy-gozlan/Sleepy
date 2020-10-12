@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/cloud2"
+
+    android:weightSum="1">
+
+    <LinearLayout  android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linear0"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <TextView
+            android:text="     Sleepy"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:background="@mipmap/sleep"
+            android:layout_width="92dp"
+            android:layout_height="match_parent" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:background="@mipmap/info"
+            android:id="@+id/infobutton"
+            android:gravity="bottom"
+            android:paddingLeft="15dp"
+            android:layout_marginEnd="16dp"
+            android:layout_height="43dp"
+            android:layout_width="49dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout  android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/linear1"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.48" />
+
+        <Button
+            android:layout_width="74dp"
+            android:layout_height="75dp"
+            android:id="@+id/StartRecordingButton"
+            android:background="@mipmap/record4"
+            android:gravity="bottom"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="0.04"></Button>
+
+        <Button
+        android:layout_width="88dp"
+        android:layout_height="match_parent"
+        android:id="@+id/StopRecordingButton"
+        android:background="@mipmap/stop1"
+        android:gravity="bottom"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"></Button>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_weight="0.04">
+
+        <Chronometer
+            android:layout_width="wrap_content"
+            android:id="@+id/chronometer4"
+            android:layout_weight="0.25"
+            android:format ="00:00:00"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_height="match_parent" />
+
+        <Chronometer
+            android:layout_width="4dp"
+            android:layout_height="30dp"
+            android:id="@+id/chronometer5" />
+    </LinearLayout>
+
+    <LinearLayout  android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/linear1"
+        android:layout="@+id/linear2"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_height="85dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_weight="0.39">
+
+            <EditText
+            android:layout_width="233dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold"
+            android:hint="   Email address"
+            android:id="@+id/editEmailAddress"
+            android:imeOptions="actionDone"
+            />
+
+            <EditText
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/black"
+                android:textStyle="bold"
+            android:inputType="textPassword"
+            android:hint="  Password"
+            android:id="@+id/editPassword"
+            android:imeOptions="actionDone" />
+
+        </LinearLayout>
+
+
+        <Button
+                android:background="@mipmap/send1"
+                android:layout_width="68dp"
+                android:id="@+id/sendEmail"
+                android:gravity="bottom"
+                android:paddingLeft="15dp"
+                android:layout_marginEnd="16dp"
+                android:layout_height="match_parent"
+            android:layout_weight="0.56" />
+
+    </LinearLayout>
+
+
+    <LinearLayout  android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/linear2"
+        android:layout="@+id/linear3"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_weight="0.05">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20" />
+
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="82dp"
+            android:id="@+id/StartPlaybackButton"
+            android:background="@mipmap/play3"
+            android:gravity="bottom"
+            android:paddingLeft="15dp"
+            android:layout_weight="0.20"></Button>
+
+
+        <Button
+        android:layout_width="93dp"
+        android:layout_height="84dp"
+        android:id="@+id/StopPlaybackButton"
+        android:background="@mipmap/stop1"
+        android:gravity="bottom"
+        android:paddingLeft="15dp"
+            android:layout_weight="0.02"></Button>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="81dp"
+            android:id="@+id/ResetValuesButton"
+            android:background="@mipmap/bin"
+            android:gravity="bottom"
+            android:paddingLeft="15dp"
+            android:layout_weight="0.19"></Button>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="wrap_content"
+
+        android:layout_below="@+id/linear3"
+        android:layout="@+id/linear4"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="378dp"
+            android:layout_height="57dp"
+            android:weightSum="1">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.70" />
+
+            <EditText
+                android:layout_width="269dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold"
+                android:hint="Optional Ip Address"
+                android:ems="10"
+                android:id="@+id/IpAddressEditText"
+                android:layout_weight="0.29" />
+        </LinearLayout>
+
+        <LinearLayout  android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@+id/linear5"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.02">
+
+
+            <Switch
+                android:textColor="@android:color/black"
+                android:text="admin"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/devSwitch" />
+
+            <EditText
+                android:layout_width="204dp"
+                android:layout_height="match_parent"
+                android:inputType="numberDecimal"
+                android:textColorHint="@android:color/black"
+                android:textStyle="bold"
+                android:hint="Enter new frequency"
+                android:ems="10"
+                android:id="@+id/devModeEdit" />
+
+            <Button
+                android:text="Stop server"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:background="@android:color/transparent"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:id="@+id/stopServer" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
